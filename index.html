@@ -11,13 +11,12 @@
 <body>
     <header>
         <nav>
-            <div class="logo">FT</div>
+            <!-- <div class="logo">FT</div> -->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -38,10 +37,13 @@
                 <div class="hero-text">
                     <h1>Frank Triolo</h1>
                     <p class="tagline">Software Engineer</p>
-                    <p class="subtitle">Passionate about creating elegant solutions to complex problems. Specializing in full-stack development and cloud technologies.</p>
+                    <p class="subtitle">
+                        Enthusiastic about systems programming and performance optimization,  
+                        with a deep fascination for low-level computing, distributed systems, and computer architecture.
+                    </p>
                 </div>
                 <div class="hero-image">
-                    <div class="image-placeholder"></div>
+                    <img src="images/Headshot.jpg" alt="Frank Triolo" class="profile-image">
                 </div>
             </div>
         </section>
@@ -53,19 +55,31 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead">I'm a passionate software developer with expertise in creating elegant solutions to complex problems. I love building applications that make a difference.</p>
-                    <p>With a strong foundation in software development and a keen eye for detail, I specialize in creating efficient, scalable, and user-friendly applications. My approach combines technical expertise with creative problem-solving to deliver exceptional results.</p>
+                    <p class="lead">
+                        I'm a dedicated software developer who thrives on crafting elegant, high-performance solutions to complex challenges.  
+                        I build applications that are not just functional, but impactful.
+                    </p>
                     <div class="skills">
                         <h3>Core Skills</h3>
                         <div class="skill-tags">
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <span>Java</span>
                             <span>Python</span>
-                            <span>React</span>
-                            <span>Node.js</span>
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>REST APIs</span>
+                            <span>Agile Methodologies</span>
+                            <span>CI/CD</span>
+                            <span>Linux</span>
+                            <span>Machine Learning</span>
+                            <span>Cloud Technologies</span>
                             <span>SQL</span>
                             <span>Git</span>
+                            <span>Networks</span>
+                            <span>Computer Architecture</span>
+                            <span>Operating Systems Design</span>
+
                         </div>
                     </div>
                 </div>
@@ -79,28 +93,66 @@
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-date">2023 - Present</div>
                     <div class="timeline-content">
-                        <h3>Senior Software Developer</h3>
-                        <h4>Company Name</h4>
-                        <p>Led development of key features and improvements for enterprise applications. Collaborated with cross-functional teams to deliver high-quality solutions.</p>
-                        <ul class="achievement-list">
+                        <div class="company-logo">
+                            <img src="images/att-logo.svg" alt="AT&T Logo">
+                        </div>
+                        <h3>Senior Member of Technical Staff</h3>
+                        <h4>AT&T</h4>
+                        <p>Developed and maintained AT&T's fiber provisioning services</p>
+                        <!-- <ul class="achievement-list">
                             <li>Implemented new features that increased user engagement by 40%</li>
                             <li>Reduced application load time by 25% through optimization</li>
                             <li>Mentored junior developers and conducted code reviews</li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="images/att-logo.svg" alt="AT&T Logo">
+                        </div>
+                        <h3>TDP Software Engineer</h3>
+                        <h4>AT&T</h4>
+                        <p>Redesigned AT&T’s fiber provisioning and RAN operations with scalable microservices, automation tools, and data-driven dashboards.</p>
+                        <ul class="achievement-list">
+                            <li>Led the transformation of AT&T’s fiber provisioning service from a monolithic to a cloud-native microservices architecture, enabling targeted modifications with minimal downtime.</li>
+                            <li>Spearheaded the development and deployment of fiber provisioning microservices using Spring Boot, Java, and Kubernetes, delivering scalable solutions.</li>
+                            <li>Built a KPI dashboard for RAN Engineers to monitor 911 call data and automated FCC radio site filings to streamline internal tooling.</li>
+                            <li>Developed an internal tool used to automate the creation of new RAN sites.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-date">2021 - 2022</div>
                     <div class="timeline-content">
-                        <h3>Software Developer</h3>
-                        <h4>Previous Company</h4>
-                        <p>Developed and maintained web applications using modern technologies. Worked on both frontend and backend development tasks.</p>
+                        <div class="company-logo">
+                            <img src="images/WD.png" alt="WD Logo">
+                        </div>
+                        <h3>Firmware Engineering Technician</h3>
+                        <h4>Western Digital</h4>
+                        <p>Firmware Development for WD's enterprise hard disk drives</p>
                         <ul class="achievement-list">
-                            <li>Built responsive web applications using React and Node.js</li>
-                            <li>Implemented automated testing that reduced bugs by 30%</li>
-                            <li>Optimized database queries improving performance by 20%</li>
+                            <li>Developed and implemented C++ security firmware for Western Digital’s enterprise hard disk drives, ensuring robust data protection and integrity</li>
+                            <li>Led a significant project focused on expanding logging capabilities on WD drives using internal cache optimization APIs. Assisted in the development of a calculator to determine cache sizes based on the data to be logged</li>
+                            <li>Creation and updating of firmware tests using Tcl and Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="images/Plug_Power.jpg" alt="Plug Power Logo">
+                        </div>
+                        <h3>Electrical Engineering Intern</h3>
+                        <h4>Plug Power</h4>
+                        <p>Improved fuel cell engine interfaces, enhanced microcontroller functionality, and optimized battery production</p>
+                        <ul class="achievement-list">
+                            <li>Designed a new operator interface for fuel cell-powered engines through comparative components research and developed microcontroller software for customer-requested features.</li>
+                            <li>Created Standard Operating Procedures for battery manufacturing and remanufacturing while analyzing battery failures and manufacturing processes to improve reliability.</li>
                         </ul>
                     </div>
                 </div>
@@ -115,26 +167,47 @@
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-shield">
-                        <img src="images/Rensselaer_at_Hartford_Seal.svg.png" alt="Rensselaer at Hartford Shield" class="shield-image">
-                    </div>
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <h4>Rensselaer Polytechnic Institute at Hartford</h4>
-                    <p class="education-date">2016 - 2020</p>
-                    <p>Graduated with honors, focusing on software engineering and web development.</p>
-                </div>
-                <div class="education-card">
-                    <div class="education-shield">
                         <img src="images/Georgia_Tech_seal.svg.png" alt="Georgia Tech Shield" class="shield-image">
                     </div>
                     <h3>Master of Science in Computer Science</h3>
                     <h4>Georgia Institute of Technology</h4>
-                    <p class="education-date">2020 - 2022</p>
-                    <p>Specialized in machine learning and artificial intelligence.</p>
+                    <p class="education-date">2022 - 2023</p>
+                    <p>Specialization in Computing Systems</p>
+                    <div class="notable-classes">
+                        <h5>Notable Classes</h5>
+                        <ul>
+                            <li>High Performance Computing</li>
+                            <li>Computer Networks</li>
+                            <li>High Performance Computer Architecture</li>
+                            <li>Graduate Operating Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-shield">
+                        <img src="images/Rensselaer_at_Hartford_Seal.svg.png" alt="Rensselaer Shield" class="shield-image">
+                    </div>
+                    <h3>Bachelor of Science in Computer Systems Engineering & Computer Science</h3>
+                    <h4>Rensselaer Polytechnic Institute</h4>
+                    <p class="education-date">2018 - 2022</p>
+                    <p>Magna Cum Laude, Specialization in Computer Systems</p>
+                    <div class="notable-classes">
+                        <h5>Notable Classes</h5>
+                        <ul>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>Operating Systems</li>
+                            <li>Database Systems</li>
+                            <li>Computer Architecture</li>
+                            <li>Data Mining</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <!-- <section id="projects" class="projects">
             <div class="section-header">
                 <h2>Featured Projects</h2>
                 <div class="section-line"></div>
@@ -160,9 +233,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add more project cards as needed -->
             </div>
-        </section>
+        </section> -->
 
         <section id="interests" class="interests">
             <div class="section-header">
@@ -172,53 +244,53 @@
             <div class="interests-grid">
                 <div class="interest-card">
                     <div class="interest-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-running"></i>
                     </div>
-                    <h3>Open Source</h3>
-                    <p>Contributing to open source projects and building tools for the developer community.</p>
+                    <h3>Running</h3>
+                    <p>Running road races post-collegiately</p>
                 </div>
                 <div class="interest-card">
                     <div class="interest-icon">
-                        <i class="fas fa-book"></i>
+                        <i class="fas fa-utensils"></i>
                     </div>
-                    <h3>Reading</h3>
-                    <p>Exploring technical books, science fiction, and staying updated with tech trends.</p>
+                    <h3>Cooking</h3>
+                    <p>Creating new dishes in the kitchen</p>
                 </div>
                 <div class="interest-card">
                     <div class="interest-icon">
-                        <i class="fas fa-hiking"></i>
+                        <i class="fas fa-chess"></i>
                     </div>
-                    <h3>Outdoor Activities</h3>
-                    <p>Hiking, photography, and exploring nature in my free time.</p>
+                    <h3>Chess</h3>
+                    <p>Challenge me on Chess.com!</p>
                 </div>
                 <div class="interest-card">
                     <div class="interest-icon">
-                        <i class="fas fa-music"></i>
+                        <i class="fas fa-terminal"></i>
                     </div>
-                    <h3>Music</h3>
-                    <p>Playing guitar and exploring different genres of music.</p>
+                    <h3>Technology</h3>
+                    <p>Writing and creating technology to use in daily life</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="section-header">
-                <h2>Get In Touch</h2>
+                <h2>Contact</h2>
                 <div class="section-line"></div>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                        <p>frank@franktriolo.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>+1 (555) 123-4567</p>
+                        <p>+1 (518) 232-4419</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>City, State, Country</p>
+                        <p>Atlanta, GA</p>
                     </div>
                 </div>
                 <form id="contact-form">
@@ -234,9 +306,9 @@
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
                 <div class="social-links">
-                    <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Frank-Triolo" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/frank-triolo/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.strava.com/athletes/18610759" target="_blank" class="social-link"><i class="fab fa-strava"></i></a>
                 </div>
             </div>
         </section>
