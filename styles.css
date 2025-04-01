@@ -160,16 +160,16 @@ nav {
 }
 
 .hero-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .profile-image {
-    max-width: 400px;
     width: 100%;
     height: auto;
     display: block;
@@ -338,11 +338,13 @@ nav {
     padding: 0.5rem;
     box-shadow: var(--shadow);
     overflow: hidden;
+    position: relative;
 }
 
 .company-logo img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
     object-fit: contain;
     border-radius: 50%;
 }
@@ -436,11 +438,13 @@ nav {
     padding: 0.5rem;
     box-shadow: var(--shadow);
     overflow: hidden;
+    position: relative;
 }
 
 .shield-image {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
     object-fit: contain;
     border-radius: 50%;
 }
@@ -871,10 +875,13 @@ footer {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 0 1rem;
+        max-width: 100%;
     }
 
     .hero-text {
         text-align: center;
+        padding: 0;
     }
 
     .hero-text h1 {
@@ -885,24 +892,109 @@ footer {
         font-size: 1.5rem;
     }
 
+    .hero-image {
+        max-width: 300px;
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    .timeline {
+        padding: 1rem;
+        max-width: 100%;
+        position: relative;
+    }
+
     .timeline::before {
         left: 0;
+        height: 100%;
     }
 
     .timeline-item {
         width: 100%;
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         padding-right: 0;
         margin-left: 0;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .timeline-item:first-child {
+        margin-top: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+        padding-left: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        z-index: 1;
+    }
+
+    .timeline-date {
+        position: absolute;
+        left: -1.5rem;
+        top: 0;
+        font-size: 0.9rem;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .achievement-list {
+        margin-top: 1rem;
+    }
+
+    .achievement-list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1.25rem;
+    }
+
+    .education-grid {
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .education-shield {
+        width: 100px;
+        height: 100px;
     }
 
     .contact-content {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+        max-width: 100%;
     }
 
     .footer-content {
         flex-direction: column;
         text-align: center;
+        padding: 0 1rem;
     }
 
     .footer-links {
@@ -915,20 +1007,26 @@ footer {
 
     .interests-grid {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+        max-width: 100%;
     }
 
-    .profile-image {
-        max-width: 300px;
+    .interest-card {
+        padding: 1.5rem;
     }
 
-    .company-logo {
-        width: 60px;
-        height: 60px;
+    /* Fix section padding */
+    .hero, .about, .experience, .education, .projects, .contact, .interests {
+        padding: 4rem 0;
     }
-    
-    .education-shield {
-        width: 100px;
-        height: 100px;
+
+    /* Fix container widths */
+    .section-header {
+        padding: 0 1rem;
+    }
+
+    .about-content, .project-grid, .contact-content {
+        padding: 0 1rem;
     }
 }
 
