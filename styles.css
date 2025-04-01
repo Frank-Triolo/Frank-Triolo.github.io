@@ -914,6 +914,16 @@ footer {
     .profile-image {
         max-width: 300px;
     }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .education-shield {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* Animations */
