@@ -57,6 +57,8 @@ header {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
+    height: 70px;
+    overflow: hidden;
 }
 
 nav {
@@ -67,6 +69,8 @@ nav {
     width: 100%;
     max-width: 100%;
     margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 .logo {
@@ -80,6 +84,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 2.5rem;
+    overflow: hidden;
 }
 
 .nav-links a {
@@ -123,8 +128,9 @@ nav {
 .hero {
     display: flex;
     align-items: flex-start;
-    padding: 6rem 5% 0;
+    padding: 8rem 5% 0;
     background: linear-gradient(135deg, var(--section-bg) 0%, var(--background) 100%);
+    margin-top: 70px;
 }
 
 .hero-content {
@@ -871,16 +877,19 @@ footer {
     header {
         width: 100%;
         max-width: 100vw;
+        height: 60px;
+        overflow: hidden;
     }
 
     nav {
         padding: 1rem;
         width: 100%;
         max-width: 100%;
+        overflow: hidden;
     }
 
     .hero, .about, .experience, .education, .projects, .contact, .interests {
-        padding: 4rem 1rem;
+        padding: 7rem 1rem 0;
         width: 100%;
         max-width: 100vw;
         margin: 0;
@@ -1005,7 +1014,7 @@ footer {
     .nav-links {
         position: fixed;
         right: -100%;
-        top: 70px;
+        top: 60px;
         flex-direction: column;
         background-color: var(--card-bg);
         width: 100%;
@@ -1013,6 +1022,8 @@ footer {
         transition: 0.3s;
         box-shadow: var(--shadow);
         padding: 2rem 0;
+        overflow-y: auto;
+        max-height: calc(100vh - 60px);
     }
 
     .nav-links.active {
